@@ -4,15 +4,18 @@ import sys
 if(len(sys.argv) == 3):
     solutionPath = sys.argv[1]
     repoDir = sys.argv[2]
+
 else:
     print "Invalid command line arguments, please run: ErrorFix.py [absolute path of solution] [absolute path of directory containing student repositories]"
     sys.exit(0)
 
 
+levels = repoDir.count('/');
+
 for subdir in os.walk(repoDir):
     for i in subdir:
         if type(i) == str:
-            if len(i.split("/")) == 7:
+            if len(i.split("/")) == levels:
                 os.chdir(i)
                 os.system("git checkout master")
                 os.system("git pull")
