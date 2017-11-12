@@ -10,7 +10,7 @@ else:
     sys.exit(0)
 
 
-levels = repoDir.count('/');
+levels = repoDir.count('/') + 2;
 
 for subdir in os.walk(repoDir):
     for i in subdir:
