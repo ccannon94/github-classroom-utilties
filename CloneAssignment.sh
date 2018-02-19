@@ -3,7 +3,7 @@
 #     GitHub Classroom clone homework
 #
 #		INSTRUCTIONS:
-#		1) Run this file specifying the homework name and optional tagname
+#		1) Run this file specifying the homework name
 # ---------------------------------------------------------------------------
 if [ -z "$1" ]
 then
