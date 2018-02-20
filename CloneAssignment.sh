@@ -53,7 +53,7 @@ git clone https://github.com/NCAT-COMP167-Spring2018/$1-JGilmore98.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-ygjadi.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-Jjguzman1.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-krhargra.git
-git clone https://github.com/NCAT-COMP167-Spring2018/$1-cmhawkinds.git
+git clone https://github.com/NCAT-COMP167-Spring2018/$1-cmhawkins.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-jhernandezcampillo.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-JJHV36.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-slhill13.git
