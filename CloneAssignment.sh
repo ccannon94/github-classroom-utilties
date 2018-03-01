@@ -38,6 +38,7 @@ git clone https://github.com/NCAT-COMP167-Spring2018/$1-cherrymalia.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-OluchiC.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-kacoates.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-czcroom.git
+git clone https://github.com/NCAT-COMP167-Spring2018/$1-CamilaGaitan.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-pocrump.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-Deriech.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-jxdawson.git
