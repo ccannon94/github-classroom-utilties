@@ -106,3 +106,4 @@ git clone https://github.com/NCAT-COMP167-Spring2018/$1-softwaregirl1994.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-trose36.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-xavierwilliams1.git
 git clone https://github.com/NCAT-COMP167-Spring2018/$1-jmyouance.git
+git clone https://github.com/NCAT-COMP167-Spring2018/$1-qyu0303.git
