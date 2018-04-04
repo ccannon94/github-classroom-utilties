@@ -12,7 +12,11 @@ There must exist a file on user's local machine that is to be added to each repo
 ### Usage
 
 This utility requires 2 command line arguments:
-1. The path to the file that needs to be added.
-2. The path to the directory containing each of your repositories.
+1. The path to the directory containing each of your repositories.
+2. The path to the file that needs to be added.
 
-Example: `addFile.py ~/Downloads/UpdatedAssignment.md ~/Documents/COMP167/Program2-StudentRepos`
+Example: `addFile.py ~/Documents/COMP167/Program2-StudentRepos ~/Downloads/UpdatedAssignment.md`
+
+
+## CloneAssignment.sh
+Brute force bash script to clone all repositories of a given assignment. This is currently under construction to paramterize and scale. I currently added all of my student's usernames by hand.
