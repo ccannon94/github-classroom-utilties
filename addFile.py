@@ -1,7 +1,6 @@
 # Python 3
 import os
 import sys
-import subprocess
 
 if(len(sys.argv) == 3):
     repoDir = sys.argv[1]
@@ -11,7 +10,7 @@ else:
     sys.exit(0)
 
 
-levels = repoDir.count('/') + 2;
+levels = repoDir.count('/') + 2
 
 for subdir in os.walk(repoDir):
     for i in subdir:
