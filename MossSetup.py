@@ -28,8 +28,8 @@ else:
 
 #TODO: Uncomment when testing complete
 #os.chdir("Moss-Directory")
-#with open(rosterPath) as f:
-#    names = f.read().splitlines()
+with open(rosterPath) as f:
+    names = f.read().splitlines()
 #for name in names:
 #    os.mkdir(name)
 
@@ -37,4 +37,8 @@ os.chdir(destinationPath + "/GitHub-Repos")
 for root, dir, files in os.walk(os.getcwd()):
     for file in files :
         if ".java" in file :
-            print(file)
+            for name in names:
+                if name in root :
+                    print(name)
+                    print(file)
+                    
