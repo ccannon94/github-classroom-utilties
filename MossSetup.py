@@ -15,24 +15,20 @@ else:
     print ("Invalid command line arguments, please run: MossSetup.py [name of classroom][name of assignment] [path to roster] [path to CloneAssignment.py script] [path to empty directory that will hold student work]")
     sys.exit(0)
 
-#TODO: Uncomment when testing complete
-#os.mkdir("GitHub-Repos")
-#os.chdir("GitHub-Repos")
-#cloneAllCommand = "python3 {} {} {} {}".format(cloneAssignmentScriptPath, classroomName, assignmentName, rosterPath)
+os.mkdir("GitHub-Repos")
+os.chdir("GitHub-Repos")
+cloneAllCommand = "python3 {} {} {} {}".format(cloneAssignmentScriptPath, classroomName, assignmentName, rosterPath)
 
-#TODO: Uncomment when testing complete
-#subprocess.call(cloneAllCommand, shell=True)
+subprocess.call(cloneAllCommand, shell=True)
 
-#TODO: Uncomment when testing complete
-#os.chdir("../")
-#os.mkdir("Moss-Directory")
+os.chdir(destinationPath)
+os.mkdir("Moss-Directory")
 
-#TODO: Uncomment when testing complete
-#os.chdir("Moss-Directory")
+os.chdir("Moss-Directory")
 with open(rosterPath) as f:
     names = f.read().splitlines()
-#for name in names:
-#    os.mkdir(name)
+for name in names:
+    os.mkdir(name)
 
 os.chdir(os.path.join(destinationPath, "GitHub-Repos"))
 for root, dir, files in os.walk(os.getcwd()):
