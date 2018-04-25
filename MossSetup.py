@@ -34,10 +34,7 @@ else:
 #    os.mkdir(name)
 
 os.chdir(destinationPath + "/GitHub-Repos")
-for subdir in os.walk(os.getcwd()):
-    for i in subdir:
-        print(i)
-
-# File "/Users/CCannon/Documents/development/github-classroom-utilties/MossSetup.py", line 23, in <module>
-#    files = os.listdir(i)
-#TypeError: listdir: path should be string, bytes, os.PathLike or None, not list
+for root, dir, files in os.walk(os.getcwd()):
+    for file in files :
+        if ".java" in file :
+            print(file)
