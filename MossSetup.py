@@ -3,6 +3,7 @@
 import os
 import sys
 import subprocess
+import shutil
 
 if(len(sys.argv) == 6):
     classroomName = sys.argv[1]
@@ -33,12 +34,10 @@ with open(rosterPath) as f:
 #for name in names:
 #    os.mkdir(name)
 
-os.chdir(destinationPath + "/GitHub-Repos")
+os.chdir(os.path.join(destinationPath, "GitHub-Repos"))
 for root, dir, files in os.walk(os.getcwd()):
     for file in files :
         if ".java" in file :
             for name in names:
                 if name in root :
-                    print(name)
-                    print(file)
-                    
+                    shutil.copy(os.path.join(root, file), os.path.join(destinationPath, "Moss-Directory", name))
