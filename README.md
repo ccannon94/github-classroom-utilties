@@ -42,6 +42,8 @@ Example: `python3 CloneAssignment.py my-class-organization assignment-1-variable
 
 ## MossSetup.py
 
+**NOTE: This script does not yet handle multiple branches in an assignment**
+
 Python3 command line utility to clone all repositories from an assignment created using [GitHub Classroom](https://classroom.github.com) and prepare them for evaluation using [MOSS plagiarism detection](https://theory.stanford.edu/~aiken/moss/).
 
 ### MOSS Directory Structure
@@ -81,4 +83,4 @@ This script requires 5 command line arguments:
 4. The local path to the users copy of the CloneAssignment.py script.
 5. The local path to an empty directory that will hold all program output.
 
-Example: `python3 CloneAssignment.py my-class-organization assignment-1-variables ~/Documents/classroster.txt ~/Downloads/CloneAssignment.py ~/Desktop/MyAssignmentToEvaluate`
+Example: `python3 MossSetup.py my-class-organization assignment-1-variables ~/Documents/classroster.txt ~/Downloads/CloneAssignment.py ~/Desktop/MyAssignmentToEvaluate`
