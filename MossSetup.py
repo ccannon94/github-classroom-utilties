@@ -12,7 +12,7 @@ if(len(sys.argv) == 6):
     cloneAssignmentScriptPath = sys.argv[4]
     destinationPath = sys.argv[5]
 else:
-    print ("Invalid command line arguments, please run: MossSetup.py [name of classroom][name of assignment] [path to roster] [path to CloneAssignment.py script] [path to empty directory that will hold student work]")
+    print ("Invalid command line arguments, please run: python3 MossSetup.py [name of classroom][name of assignment] [path to roster] [path to CloneAssignment.py script] [path to empty directory that will hold student work]")
     sys.exit(0)
 
 os.mkdir("GitHub-Repos")
