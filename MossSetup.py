@@ -17,6 +17,7 @@ else:
     sys.exit(0)
 
 # Make a directory to hold all student submissions, clone all submissions
+os.chdir(destinationPath)
 os.mkdir("GitHub-Repos")
 os.chdir("GitHub-Repos")
 cloneAllCommand = "python3 {} {} {} {}".format(cloneAssignmentScriptPath, classroomName, assignmentName, rosterPath)
