@@ -9,13 +9,16 @@ else:
     print ("Invalid command line arguments, please run: addFile.py [absolute path of directory containing student repositories] [absolute path of solution]")
     sys.exit(0)
 
-
-levels = repoDir.count('/') + 2
+if(repoDir.endsWith('/')):
+    levels = repoDir.count('/') + 1
+else:
+    levels = repoDir.count('/') + 2
 
 for subdir in os.walk(repoDir):
     for i in subdir:
         if type(i) == str:
             if len(i.split("/")) == levels:
+                print(i)
                 os.chdir(i)
                 os.system("git checkout master")
                 os.system("git pull")
