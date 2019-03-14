@@ -9,7 +9,7 @@ else:
     print ("Invalid command line arguments, please run: addFile.py [absolute path of directory containing student repositories] [absolute path of solution]")
     sys.exit(0)
 
-if(repoDir.endsWith('/')):
+if(repoDir.endswith('/')):
     levels = repoDir.count('/') + 1
 else:
     levels = repoDir.count('/') + 2
